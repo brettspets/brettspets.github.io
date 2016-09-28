@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Dan Bowman</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="img/icon.png">
+  <!-- start of Javascript/jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/buttons.js" type="text/javascript"></script>
+  <script>
+    function newTab(url) {
+      var win = window.open(url, '_blank');
+      if (win) {
+        win.focus();
+      } else {
+        alert('You must allow popups for this website');
+      }
+    }
+  </script>
+  <!-- end of Javascript/jQuery -->
+</head>
+<!-- Start content -->
+<body>
+	<div class="container">
+		<div class="navBar">
+			<ul class="navButtons">
+				<li><a id="homeButton">Home</a></li>
+				<li><a id="blogButton">Blog</a></li>
+				<li><a id="portfolioButton">Portfolio</a></li>
+				<li><a id="resumeButton">Resume</a></li>
+			</ul>
+		</div>
+
+		<div class="body" id="home">
+			<h2>About the Man</h2>
+      <p>Dan Bowman is a creative designer with endeavors in several fields. He makes music using devices such as guitars, bass guitars, drums, computers, tabletops, steering wheels, and keys in his pocket. He is an experimental cook, crafting interesting and sometimes delicious recipes, and on top of that, he brews only the finest meads and beers. He also writes generally any form of comedy and/or sci-fi, and currently writes and lends his voice for a TV-style cartoon in the works. He has experience in worldbuilding and character design, and uses this knowledge to create and program video games and the like. He has a very technical design process, usually applying his knowledge of programming and logic to create anything he needs. He made this website from scratch using HTML, CSS, Javascript and jQuery, and maintains it using the GitHub version control system. He is a passionate troubleshooter and an exceptional problem solver.</p>
+		</div>
+
+		<div class="body" id="blog">
+      <h2>Bloog</h2>
+		</div>
+
+		<div class="body" id="portfolio">
+      <h2>Port</h2>
+		</div>
+
+		<div class="body" id="resume">
+      <h2>Resume</h2>
+		    <p><a onclick="newTab('txt/dwbowman_resume_redacted.pdf')">My Resume</a> has been redacted for security purposes. If you would like to inquire about my full resume for professional purposes, please contact me by email.</p>
+      <h2>About the Resume</h2>
+      <p>My Resume was designed using the LaTeX document preparation markup language.</p>
+		</div>
+	</div>
+</body>
+<!-- end content -->
+</html>
