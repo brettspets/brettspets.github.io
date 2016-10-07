@@ -1,0 +1,123 @@
+:root {
+	--color-1: #226666;
+	--color-2: #669999;
+	--color-3: #407F7F;
+	--color-4: #0D4D4D;
+	--color-5: #003333;
+}
+
+html {
+	background-color: var(--color-4);
+	text-align: center;
+	font-family : "Tahoma", Geneva, sans-serif;
+	font-size: 13px;
+}
+
+
+div {
+	display: inline-block;
+	background-color: white;
+	text-align: left;
+	margin: 0;
+}
+
+.sidebar {
+	background-color: var(--color-5);
+	position: absolute;
+	left: 0px; top: 0px;
+	width: 150px;
+	height: 600px;
+	transition: .5s;
+}
+
+.barButton {
+	background-color: var(--color-4);
+	background-image: url("img/left.png");
+	position: absolute;
+	left: 150px; top: 0px;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	transition: .5s;
+}
+
+.barButton:hover {
+	cursor: pointer;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+.header {
+	background-color: var(--color-3);
+	width: 100%;
+	margin: 0;
+	float: top;
+}
+
+.body {
+	margin: 0;
+}
+
+
+.col {
+	padding: 20px;
+	width: 40%;
+	float: left;
+}
+
+#leftCol {
+	transition: .5s;
+	padding-right: 100px;
+}
+
+#rightCol {
+	transition: .5s;
+}
+
+.footer {
+	background-color: var(--color-3);
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	float: bottom;
+}
+
+.container:after {
+	clear: both;
+}
+
+.navButtons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#button:hover {
+	content: url("img/navbutton_hover.png");
+	cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+	.container {
+		position: absolute;
+		left: 225px;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width:640px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width:1400px) {
+	#leftCol {
+		padding-right: 50px;
+	}
+}
