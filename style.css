@@ -1,14 +1,14 @@
 :root {
-	--color-1: #FFEE9F;
-	--color-2: #FFD300;
-	--color-3: #DFFF9F;
-	--color-4: #AAFF00;
-	--color-5: #FFCA9F;
-	--color-6: #FF7400;
+	--color-1: #FFD300;
+	--color-2: #FFE670;
+	--color-3: #AAFF00;
+	--color-4: #CFFF70;
+	--color-5: #FF7400;
+	--color-6: #FFB170;
 }
 
 html {
-	background-color: var(--color-3);
+	background-color: var(--color-4);
 	text-align: center;
 	font-family : "Tahoma", Geneva, sans-serif;
 	font-size: 13px;
@@ -19,20 +19,21 @@ div {
 	display: inline-block;
 	background-color: white;
 	text-align: left;
+	line-height: 150%;
+	letter-spacing: 0.5px;
 	margin: 0;
 }
 
 .sidebar {
-	background-color: var(--color-3);
-	position: absolute;
-	left: 0px; top: 0px;
-	width: 150px;
-	height: 600px;
+	float: bottom;
+	background-color: var(--color-1);
+	width: 100%;
+	margin: 0px;
 	transition: .5s;
 }
 
 .barButton {
-	background-color: var(--color-3);
+	background-color: var(--color-4);
 	background-image: url("img/left.png");
 	position: absolute;
 	left: 150px; top: 0px;
@@ -43,7 +44,7 @@ div {
 }
 
 .barButton:hover {
-	background-color: var(--color-4);
+	background-color: var(--color-3);
 	cursor: pointer;
 }
 
@@ -57,6 +58,7 @@ div {
 	background-color: var(--color-1);
 	width: 100%;
 	margin: 0;
+	padding-bottom: 0px;
 	float: top;
 }
 
@@ -80,6 +82,10 @@ div {
 	transition: .5s;
 }
 
+#petDescription {
+	height: 200px;
+}
+
 .footer {
 	background-color: var(--color-1);
 	text-align: center;
@@ -100,11 +106,14 @@ div {
 }
 
 #button {
-	background-color: var(--color-3);
-	padding: 10px;
+	background-color: var(--color-1);
+	float: left;
+	padding: 0px;
+	padding-top: 3px;
 }
+
 #button:hover {
-	background-color: var(--color-4);
+	background-color: var(--color-2);
 	cursor: pointer;
 }
 
