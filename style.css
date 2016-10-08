@@ -1,12 +1,9 @@
 :root {
-	
-
---color-1: #D3D7DA;
---color-2: #889DAE;
---color-3: #A8B7C3;
---color-4: #9DA3A9;
---color-5: #889096;
-
+	--color-1: #D3D7DA;
+	--color-2: #889DAE;
+	--color-3: #A8B7C3;
+	--color-4: #9DA3A9;
+	--color-5: #889096;
 }
 
 html {
@@ -101,8 +98,11 @@ div {
 	overflow: hidden;
 }
 
+#button {
+	background-color: var(--color-4);
+}
 #button:hover {
-	content: url("img/navbutton_hover.png");
+	background-color: var(--color-5);
 	cursor: pointer;
 }
 
