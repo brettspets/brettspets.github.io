@@ -10,7 +10,7 @@
 }
 
 html {
-	background-color: var(--color-1);
+	background-color: var(--color-5);
 	text-align: center;
 	font-family : "Tahoma", Geneva, sans-serif;
 	font-size: 13px;
@@ -19,13 +19,13 @@ html {
 
 div {
 	display: inline-block;
-	background-color: white;
+	background-color: var(--color-1);
 	text-align: left;
 	margin: 0;
 }
 
 .sidebar {
-	background-color: var(--color-2);
+	background-color: var(--color-3);
 	position: absolute;
 	left: 0px; top: 0px;
 	width: 150px;
@@ -45,6 +45,7 @@ div {
 }
 
 .barButton:hover {
+	background-color: var(--color-5);
 	cursor: pointer;
 }
 
@@ -55,7 +56,7 @@ div {
 }
 
 .header {
-	background-color: var(--color-3);
+	background-color: var(--color-2);
 	width: 100%;
 	margin: 0;
 	float: top;
@@ -82,7 +83,7 @@ div {
 }
 
 .footer {
-	background-color: var(--color-3);
+	background-color: var(--color-2);
 	text-align: center;
 	width: 100%;
 	margin: 0;
