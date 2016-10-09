@@ -128,7 +128,7 @@ div {
 @media screen and (max-width:1900px) {
 	.container {
 		position: absolute;
-		left: 25px;
+		left: 10px;
 		width: 1000px;
 	}
 
