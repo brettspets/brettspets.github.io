@@ -38,7 +38,11 @@
 		<div class="header">
 			<img src="img/mouse.png" width="170", height="197">
 			<img src="img/brettspets_alpha.png" width="602", height="163">
-			<h3>Professional In-Home Pet Sitting!</h3>
+
+			<div class="tagline">
+				<p>Professional <br> In-Home <br> Pet Sitting!</p>
+			</div>
+
 			<div class="sidebar">
 			<ul class="navButtons">
 				<li id="button"><a href="index.html"><img src="img/homeButton.png"></a></li>
@@ -66,34 +70,44 @@
 			</div>
 			<div id="rightCol" class="col">
 				<h2>Schedule an Appointment</h2>
-				<label>Name</label>
-				<br>
-				<input type="text">
-				<br>
-				<label>Email</label>
-				<br>
-				<input type="text">
-				<br>
-				<label>Phone Number</label>
-				<br>
-				<input type="text">
-				<br>
-				<label>Zip Code</label>
-				<br>
-				<input type="text">
-				<br>
-				<label>Number of Pets</label>
-				<br>
-				<input type="text">
-				<br>
-				<label>Day(s) Requested</label>
-				<br>
-				<input type="text">
-				<br>
-				<label>Tell me about your pet(s)!</label>
-				<br>
-				<input id="petDescription" type="text">
-				<br>
+				<form action="https://formspree.io/danbowman21@gmail.com"
+						autocomplete="off"
+  						method="POST"
+  						enctype="multipart/form-data"
+  						name="EmailTestForm">
+
+					<label>Name</label>
+					<br>
+					<input type="text" size="20" name="customerName">
+					<br>
+					<label>Email</label>
+					<br>
+					<input type="text" size="20" name="customerEmail">
+					<br>
+					<label>Phone Number</label>
+					<br>
+					<input type="text" size="20" name="customerPhone">
+					<br>
+					<label>Zip Code</label>
+					<br>
+					<input type="text" size="20" name="customerZip">
+					<br>
+					<label>Number of Pets</label>
+					<br>
+					<input type="text" size="20" name="petNumber">
+					<br>
+					<label>Day(s) Requested</label>
+					<br>
+					<input type="text" size="20" name="daysRequested">
+					<br>
+					<label>Tell me about your pet(s)!</label>
+					<br>
+					<textarea name="aboutPets" rows="20" cols="20"></textarea>
+					<br>
+					<br>
+					<input type="submit" value="Submit">
+
+				</form>
 			</div>
 		</div>
 		<div class="footer">

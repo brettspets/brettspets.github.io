@@ -10,7 +10,7 @@
 html {
 	background-color: var(--color-4);
 	text-align: center;
-	font-family : "Tahoma", Geneva, sans-serif;
+	font-family: "Tahoma", Geneva, sans-serif;
 	font-size: 13px;
 }
 
@@ -62,6 +62,17 @@ div {
 	float: top;
 }
 
+.tagline {
+	background-color: var(--color-1);
+	text-align: center;
+	font-family: Cambria, Georgia, serif;
+	font-weight: bold;
+	font-size: 25px;
+	float: right;
+	padding-right: 110px;
+	padding-top: 50px;
+}
+
 .body {
 	margin: 0;
 }
@@ -80,10 +91,6 @@ div {
 
 #rightCol {
 	transition: .5s;
-}
-
-#petDescription {
-	height: 200px;
 }
 
 .footer {
