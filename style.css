@@ -52,6 +52,7 @@ div {
 	width: 60%;
 	margin: 0 auto;
 	transition: 0.25s;
+	border-radius: 2px;
 }
 
 .header {
