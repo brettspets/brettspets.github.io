@@ -51,7 +51,7 @@ div {
 .container {
 	width: 60%;
 	margin: 0 auto;
-	transition: 1s;
+	transition: 0.25s;
 }
 
 .header {
