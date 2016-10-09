@@ -4,33 +4,9 @@
 	<title>Brett's Pets</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
 <!--<link rel="icon" href="img/icon.png">-->
 
-<!-- start of Javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script>
-		$( document ).ready(function() {
-
-			var isShowing = 1;
-
-			$(".barButton").click(function() {
-
-				if(isShowing === 1) {
-					$(".sidebar").css({"left": "-150px"});
-					$(".barButton").css({"left": "0px", "background-image": "url('img/right.png')"});
-					$(".container").css({"left": "75px"});
-					isShowing = 0;
-				} else if (isShowing === 0) {
-					$(".sidebar").css({"left": "0px"});
-					$(".barButton").css({"left": "150px", "background-image": "url('img/left.png')"});
-					$(".container").css({"left": "225px"});
-					isShowing = 1;
-				}
-			});
-
-		});
-	</script>
-<!-- end of Javascript -->
 </head>
 <!-- Start content -->
 <body>
@@ -45,14 +21,12 @@
 
 			<div class="sidebar">
 			<ul class="navButtons">
-				<li id="button"><a href="index.html"><img src="img/homeButton.png"></a></li>
-				<li id="button"><a href="about.html"><img src="img/aboutButton.png"></a></li>
-				<li id="button"><a href="staff.html"><img src="img/staffButton.png"></a></li>
-				<li id="button"><a href="testimonials.html"><img src="img/testimonialsButton.png"></a></li>
-				<li id="button"><a href="map.html"><img src="img/mapButton.png"></a></li>
+				<li id="navButton"><a href="index.html"><img src="img/homeButton.png"></a></li>
+				<li id="navButton"><a href="about.html"><img src="img/aboutButton.png"></a></li>
+				<li id="navButton"><a href="staff.html"><img src="img/staffButton.png"></a></li>
+				<li id="navButton"><a href="testimonials.html"><img src="img/testimonialsButton.png"></a></li>
+				<li id="navButton"><a href="map.html"><img src="img/mapButton.png"></a></li>
 			</ul>
-	</div>
-	<div class="barButton">
 	</div>
 		</div>
 		<div class="body">
@@ -70,7 +44,8 @@
 			</div>
 			<div id="rightCol" class="col">
 				<h2>Schedule an Appointment</h2>
-				<form action="https://formspree.io/brettcwilliams@gmail.com"
+				<form id="controlgroup"
+						action="https://formspree.io/brettcwilliams@gmail.com"
 						autocomplete="off"
   						method="POST"
   						enctype="multipart/form-data"
@@ -106,13 +81,20 @@
 					<input type="text" size="30" name="daysRequested">
 					<br>
 					<br>
+					<label for="microchipped">Microchipped?</label>
+					<input type="checkbox" name="microchipped" id="microchipped">
+					<br>
+					<label for="vaccinated">Vaccinated?</label>
+					<input type="checkbox" name="vaccinated" id="vaccinated">
+					<br>
+					<br>
+					<br>
 					<label>Tell me about your pet(s)!</label>
 					<br>
 					<textarea name="aboutPets" rows="15" cols="31"></textarea>
 					<br>
 					<br>
-					<input type="submit" value="Submit">
-
+					<button id="button" type="submit" value="Submit">Submit</button>
 				</form>
 			</div>
 		</div>
@@ -123,6 +105,141 @@
 			<img src="img/linkedin.png" width="46" height="46">
 		</div>
 	</div>
+
+<!-- start of Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+
+			$( "#accordion" ).accordion();
+
+
+
+				var availableTags = [
+					"ActionScript",
+					"AppleScript",
+					"Asp",
+					"BASIC",
+					"C",
+					"C++",
+					"Clojure",
+					"COBOL",
+					"ColdFusion",
+					"Erlang",
+					"Fortran",
+					"Groovy",
+					"Haskell",
+					"Java",
+					"JavaScript",
+					"Lisp",
+					"Perl",
+					"PHP",
+					"Python",
+					"Ruby",
+					"Scala",
+					"Scheme"
+				];
+				$( "#autocomplete" ).autocomplete({
+					source: availableTags
+				});
+
+
+
+				$( "#button" ).button();
+				$( "#button-icon" ).button({
+					icon: "ui-icon-gear",
+					showLabel: false
+				});
+
+
+
+				$( "#radioset" ).buttonset();
+
+
+
+				$( "#controlgroup" ).controlgroup();
+
+
+
+				$( "#tabs" ).tabs();
+
+
+
+				$( "#dialog" ).dialog({
+					autoOpen: false,
+					width: 400,
+					buttons: [
+						{
+							text: "Ok",
+							click: function() {
+								$( this ).dialog( "close" );
+							}
+						},
+						{
+							text: "Cancel",
+							click: function() {
+								$( this ).dialog( "close" );
+							}
+						}
+					]
+				});
+
+				// Link to open the dialog
+				$( "#dialog-link" ).click(function( event ) {
+					$( "#dialog" ).dialog( "open" );
+					event.preventDefault();
+				});
+
+
+
+				$( "#datepicker" ).datepicker({
+					inline: true
+				});
+
+
+
+				$( "#slider" ).slider({
+					range: true,
+					values: [ 17, 67 ]
+				});
+
+
+
+				$( "#progressbar" ).progressbar({
+					value: 20
+				});
+
+
+
+				$( "#spinner" ).spinner();
+
+
+
+				$( "#menu" ).menu();
+
+
+
+				$( "#tooltip" ).tooltip();
+
+
+
+				$( "#selectmenu" ).selectmenu();
+
+
+				// Hover states on the static widgets
+				$( "#dialog-link, #icons li" ).hover(
+					function() {
+						$( this ).addClass( "ui-state-hover" );
+					},
+					function() {
+						$( this ).removeClass( "ui-state-hover" );
+					}
+				);
+
+		});
+	</script>
+<!-- end of Javascript -->
 </body>
 <!-- end content -->
 </html>
