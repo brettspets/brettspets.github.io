@@ -1,4 +1,2 @@
 # www
-My personal website
-<br>
-Uses HTML, CSS, Javascript, and jQuery.
+Website for Brett's Pets pet sitting service
