@@ -68,6 +68,17 @@ div {
 	margin: 0;
 }
 
+.mapFrame {
+	display: block;
+	position: relative;
+	left: 55%;
+}
+
+#map {
+	display: block;
+	position: relative;
+	left: -15%;
+}
 
 .col {
 	padding: 20px;
@@ -130,6 +141,14 @@ div {
 		padding-right: 30px;
 		padding-left: 0px;
 		font-size: 20px;
+	}
+
+	.mapFrame {
+		left: 25%;
+	}
+
+	#map {
+		left: -10px;
 	}
 }
 
