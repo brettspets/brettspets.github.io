@@ -78,7 +78,7 @@
 					<br>
 					<label for="startDay, endDay">Day(s) Requested</label>
 					<br>
-					<input id="datepicker" type="text" size="30" name="startDay"> - <input id="datepicker" type="text" size="30" name="endDay">
+					<input id="datepicker1" type="text" size="10" name="startDay"> - <input id="datepicker2" type="text" size="10" name="endDay">
 					<br>
 					<br>
 					<label for="microchipped">Microchipped?</label>
@@ -194,7 +194,11 @@
 
 
 
-				$( "#datepicker" ).datepicker({
+				$( "#datepicker1" ).datepicker({
+					inline: true
+				});
+			
+				$( "#datepicker2" ).datepicker({
 					inline: true
 				});
 
