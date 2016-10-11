@@ -101,6 +101,7 @@ div {
 	background-image: url("img/bgnoise2.png");
 	text-align: center;
 	width: 100%;
+	padding-top: 5px;
 	margin: 0;
 	float: bottom;
 }
@@ -112,6 +113,7 @@ div {
 .navButtons {
 	list-style-type: none;
 	margin: 0;
+	margin-left: 30px;
 	padding: 0;
 	overflow: hidden;
 }
@@ -120,14 +122,42 @@ div {
 	background-color: var(--color-1);
 	background-image: url("img/bgnoise2.png");
 	float: left;
-	padding: 0px;
-	padding-top: 3px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 0.75s;
 }
 
 #navButton:hover {
 	background-color: var(--color-2);
 	background-image: url("img/bgnoise2.png");
+	border-radius: 10px;
 	cursor: pointer;
+}
+
+li a {
+	color: black;
+	text-decoration: none;
+}
+
+li a:link {
+	color: black;
+	text-decoration: none;
+}
+
+li a:active {
+	color: black;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+li a:visited {
+	color: black;
+	text-decoration: none;
 }
 
 @media screen and (max-width:1900px) {
