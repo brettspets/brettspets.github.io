@@ -3,7 +3,7 @@ Colors:
 
 Header/footer	 - #FFD300
 Header highlight - #FFE670
-Backdrop	 - #CFFF70
+Backdrop		 - #CFFF70
 
 */
 
@@ -123,8 +123,8 @@ div {
 	background-image: url("img/bgnoise2.png");
 	float: left;
 	padding: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
 	transition: 0.75s;
 }
 
@@ -135,27 +135,27 @@ div {
 	cursor: pointer;
 }
 
-li a {
+ul a {
 	color: black;
 	text-decoration: none;
 }
 
-li a:link {
+ul a:link {
 	color: black;
 	text-decoration: none;
 }
 
-li a:active {
+ul a:active {
 	color: black;
 	text-decoration: none;
 }
 
-li a:hover {
+ul a:hover {
 	color: black;
 	text-decoration: none;
 }
 
-li a:visited {
+ul a:visited {
 	color: black;
 	text-decoration: none;
 }
