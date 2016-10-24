@@ -1,14 +1,14 @@
-:root {
-	--color-1: #FFD300;
-	--color-2: #FFE670;
-	--color-3: #AAFF00;
-	--color-4: #CFFF70;
-	--color-5: #FF7400;
-	--color-6: #FFB170;
-}
+/*
+Colors:
+
+Header/footer	 - #FFD300
+Header highlight - #FFE670
+Backdrop		 - #CFFF70
+
+*/
 
 html {
-	background-color: var(--color-4);
+	background-color: #CFFF70;
 	background-image: url("img/bgnoise1.png");
 	text-align: center;
 	font-family: "Tahoma", Geneva, sans-serif;
@@ -27,7 +27,7 @@ div {
 
 .sidebar {
 	float: bottom;
-	background-color: var(--color-1);
+	background-color: #FFD300;
 	background-image: url("img/bgnoise2.png");
 	width: 100%;
 	margin: 0px;
@@ -43,7 +43,7 @@ div {
 }
 
 .header {
-	background-color: var(--color-1);
+	background-color: #FFD300;
 	background-image: url("img/bgnoise2.png");
 	width: 100%;
 	margin: 0;
@@ -52,7 +52,7 @@ div {
 }
 
 .tagline {
-	background-color: var(--color-1);
+	background-color: #FFD300;
 	background-image: url("img/bgnoise2.png");
 	text-align: center;
 	font-family: Cambria, Georgia, serif;
@@ -97,7 +97,7 @@ div {
 }
 
 .footer {
-	background-color: var(--color-1);
+	background-color: #FFD300;
 	background-image: url("img/bgnoise2.png");
 	text-align: center;
 	width: 100%;
@@ -119,7 +119,7 @@ div {
 }
 
 #navButton {
-	background-color: var(--color-1);
+	background-color: #FFD300;
 	background-image: url("img/bgnoise2.png");
 	float: left;
 	padding: 10px;
@@ -129,7 +129,7 @@ div {
 }
 
 #navButton:hover {
-	background-color: var(--color-2);
+	background-color: #FFE670;
 	background-image: url("img/bgnoise2.png");
 	border-radius: 10px;
 	cursor: pointer;
