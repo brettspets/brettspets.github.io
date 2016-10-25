@@ -118,10 +118,15 @@ div {
 	overflow: hidden;
 }
 
+.navButtons li {
+		
+}
+
 #navButton {
 	background-color: #FFD300;
 	background-image: url("img/button.png");
-	background-size: 149px 44px;
+	width: 149px;
+	height: 44px;
 	float: left;
 	border-radius: 8px;
 	transition: 0.25s;
