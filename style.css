@@ -122,10 +122,8 @@ div {
 	background-color: #FFD300;
 	background-image: url("img/button.png");
 	float: left;
-	padding: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
-	transition: 0.75s;
+	padding: auto;
+	transition: 0.25s;
 }
 
 #navButton:hover {
