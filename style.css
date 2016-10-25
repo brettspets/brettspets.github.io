@@ -121,15 +121,16 @@ div {
 #navButton {
 	background-color: #FFD300;
 	background-image: url("img/button.png");
+	background-size: 149px 44px;
 	float: left;
 	padding: auto;
+	border-radius: 8px;
 	transition: 0.25s;
 }
 
 #navButton:hover {
 	background-color: #FFE670;
 	background-image: url("img/button_press.png");
-	border-radius: 10px;
 	cursor: pointer;
 }
 
