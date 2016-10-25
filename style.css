@@ -120,7 +120,7 @@ div {
 
 #navButton {
 	background-color: #FFD300;
-	background-image: url("img/bgnoise2.png");
+	background-image: url("img/button.png");
 	float: left;
 	padding: 10px;
 	padding-left: 30px;
@@ -130,7 +130,7 @@ div {
 
 #navButton:hover {
 	background-color: #FFE670;
-	background-image: url("img/bgnoise2.png");
+	background-image: url("img/button_press.png");
 	border-radius: 10px;
 	cursor: pointer;
 }
