@@ -4,7 +4,7 @@ Colors:
 Header/footer	  - #FFD300
 Header highlight  - #FFE670
 Navbar background - #F7CD00
-Backdrop		  - #CFFF70
+Backdrop	  - #CFFF70
 
 */
 
@@ -13,7 +13,7 @@ html {
 	background-image: url("img/bgnoise1.png");
 	text-align: center;
 	font-family: "Tahoma", Geneva, sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 
