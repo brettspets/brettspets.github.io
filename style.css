@@ -4,7 +4,7 @@ Colors:
 Header/footer	  - #FFD300
 Header highlight  - #FFE670
 Navbar background - #F7CD00
-Backdrop	  - #CFFF70
+Backdrop		  - #CFFF70
 
 */
 
@@ -87,6 +87,14 @@ div {
 	padding: 20px;
 	width: 40%;
 	float: left;
+}
+
+.rightColImg {
+	margin-left: 40px;
+}
+
+.leftColImg {
+	margin-left: 150px;
 }
 
 #leftCol {
