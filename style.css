@@ -29,7 +29,7 @@ div {
 .sidebar {
 	float: bottom;
 	background-color: #F7CD00;
-	background-image: url("img/bgnoise2.png");
+	background-image: url("img/navbar_bg.png");
 	width: 100%;
 	padding: 0;
 	margin: 0px;
@@ -38,6 +38,7 @@ div {
 }
 
 .container {
+	position: relative;
 	width: 60%;
 	margin: 0 auto;
 	transition: 0.25s;
@@ -61,10 +62,22 @@ div {
 	font-family: Cambria, Georgia, serif;
 	font-weight: bold;
 	font-size: 25px;
-	float: right;
+	float: left;
 	margin: 0px;
-	padding-right: 110px;
-	padding-top: 50px;
+	padding: 0px;
+	padding-left: 200px;
+}
+
+.mousePeek {
+	background-color: transparent;
+	background-image: url("img/whitespace.png");
+	overflow: visible;
+	float: right;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	right: 10px;
+	top: 45px;
 }
 
 .body {
@@ -181,13 +194,6 @@ ul a:visited {
 		position: absolute;
 		left: 10px;
 		width: 960px;
-	}
-
-	.tagline {
-		padding-top: 65px;
-		padding-right: 30px;
-		padding-left: 0px;
-		font-size: 20px;
 	}
 
 	.mapFrame {
