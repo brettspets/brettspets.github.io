@@ -83,6 +83,7 @@ div {
 
 .body {
 	margin: 0;
+	text-align: center;
 }
 
 .mapFrame {
@@ -115,6 +116,19 @@ div {
 	transition: .5s;
 	margin-left: 25px;
 	padding-right: 100px;
+}
+
+#leftMargin {
+	width: 160px;
+}
+
+#middleCol {
+	transition: .5s;
+	width: 60%;
+}
+
+#rightMargin {
+	width: 100px;
 }
 
 #rightCol {
@@ -203,5 +217,9 @@ ul a:visited {
 
 	#map {
 		left: -10px;
+	}
+
+	#leftMargin {
+		width: 120px;
 	}
 }
