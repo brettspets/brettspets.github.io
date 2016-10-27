@@ -28,7 +28,7 @@ div {
 
 .sidebar {
 	float: bottom;
-	background-color: #FFD300;
+	background-color: #F7CD00;
 	background-image: url("img/navbar_bg.png");
 	width: 100%;
 	padding: 0;
@@ -62,6 +62,7 @@ div {
 	font-family: Cambria, Georgia, serif;
 	font-weight: bold;
 	font-size: 25px;
+	line-height: 100%;
 	float: left;
 	margin: 0px;
 	padding: 0px;
@@ -103,7 +104,7 @@ div {
 }
 
 .rightColImg {
-	margin-left: 40px;
+	margin-left: 50px;
 }
 
 .leftColImg {
