@@ -10,7 +10,7 @@ Backdrop		  - #CFFF70
 
 html {
 	background-color: #CFFF70;
-	background-image: url("img/footprints.png");
+	background-image: url("img/footprints_rand.png");
 	text-align: center;
 	font-family: "Tahoma", Geneva, sans-serif;
 	font-size: 16px;
@@ -59,14 +59,14 @@ div {
 	background-color: #FFD300;
 	background-image: url("img/bgnoise2.png");
 	text-align: center;
-	font-family: Cambria, Georgia, serif;
+	font-family: "Segoe Script", Segoe Script;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 30px;
 	line-height: 100%;
 	float: left;
 	margin: 0px;
 	padding: 0px;
-	padding-left: 200px;
+	padding-left: 230px;
 }
 
 .mousePeek {
