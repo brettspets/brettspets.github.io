@@ -19,10 +19,6 @@
 				<p>Professional In-Home Pet Sitting!</p>
 			</div>
 
-			<div class="mousePeek">
-				<img src="img/mouse_peek.png" width="125", height="100">
-			</div>
-
 			<div class="sidebar">
 			<ul class="navButtons">
 				<a href="index.html"><li id="navButton" style="background-image: url('img/button_press.png')"><img src="img/homeButton.png"></li></a>
@@ -34,7 +30,7 @@
 	</div>
 		</div>
 		<div class="body">
-			<div id="leftCol" class="col">
+			<div id="leftCol" class="col" style="padding-right: 60px;">
 				<h2>Welcome!</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae rhoncus mauris. Nunc viverra lobortis lorem, nec laoreet diam dapibus ut. In sodales mi at sem sollicitudin, at fringilla metus porta. Curabitur molestie turpis eget scelerisque lobortis. Maecenas vitae varius nunc. Ut sagittis odio eget mi fermentum, at consectetur mi tempor. Etiam elit ipsum, interdum sed est sed, molestie tincidunt justo.</p>
 
@@ -46,61 +42,63 @@
 
 				<p>Maecenas congue diam vel urna pellentesque, et rhoncus nulla scelerisque. Donec elementum elit non bibendum venenatis. Nullam a nunc porttitor, blandit urna ac, ultrices ante. Aliquam semper tincidunt varius. Ut et euismod quam. Mauris id quam efficitur, fringilla elit aliquet, volutpat risus. Nunc consequat ligula vel mauris laoreet varius quis sed purus. Nullam et ex sed ipsum iaculis pellentesque. Nam ultricies at dui sit amet vestibulum. Proin ac malesuada nibh, blandit ullamcorper magna. Ut molestie dignissim turpis, a condimentum enim pharetra a. Donec laoreet dignissim dapibus. Sed a felis urna. Phasellus vulputate leo est, a porta sapien bibendum non. Quisque at ipsum orci.</p>
 			</div>
-			<div id="rightCol" class="col">
-				<h2>Schedule an Appointment</h2>
-				<form id="controlgroup"
-						action="https://formspree.io/brettcwilliams@gmail.com"
-						autocomplete="off"
-  						method="POST"
-  						enctype="multipart/form-data"
-  						name="EmailTestForm">
+			<div id="rightCol" class="col" style="padding: 0px; padding-top: 50px;">
+				<div class="formWrapper">
+					<div class="formHeader">
+						<div class="formHeaderTitle">
+							<h2 style="font-family: 'Segoe Script', Segoe Script;">Schedule <br> Your <br> Appointment!</h2>
+						</div>
+						
+						<div class="mousePeek" style="top: 60px;">
+							<img src="img/mouse_peek.png" width="125", height="100">
+						</div>
+					</div>
+					
+						<form id="controlgroup"
+								action="https://formspree.io/dbowman5@gmail.com"
+								autocomplete="off"
+		  						method="POST"
+		  						enctype="multipart/form-data"
+		  						name="EmailTestForm">
 
-					<label for="customerName">Name</label>
-					<br>
-					<input type="text" size="30" name="customerName">
-					<br>
-					<br>
-					<label for="_replyto">Email</label>
-					<br>
-					<input type="email" size="30" name="_replyto">
-					<br>
-					<br>
-					<label for="customerPhone">Phone Number</label>
-					<br>
-					<input type="text" size="14" name="customerPhone" placeholder="(123) 456-7890">
-					<br>
-					<br>
-					<label for="customerZip">Zip Code</label>
-					<br>
-					<input type="text" size="10" name="customerZip">
-					<br>
-					<br>
-					<label for="petNumber">Number of Pets</label>
-					<br>
-					<input type="text" size="10" name="petNumber">
-					<br>
-					<br>
-					<label for="startDay, endDay">Day(s) Requested</label>
-					<br>
-					<input id="datepicker1" type="text" size="10" name="startDay"> - <input id="datepicker2" type="text" size="10" name="endDay">
-					<br>
-					<br>
-					<label for="microchipped">Microchipped?</label>
-					<input type="checkbox" name="microchipped" id="microchipped">
-					<br>
-					<label for="vaccinated">Vaccinated?</label>
-					<input type="checkbox" name="vaccinated" id="vaccinated">
-					<br>
-					<br>
-					<br>
-					<label for="aboutPets">Tell me about your pet(s)!</label>
-					<br>
-					<textarea name="aboutPets" rows="15" cols="31"></textarea>
-					<br>
-					<br>
-					<input class="hidden" type="text" name="_gotcha" style="display: none">
-					<button id="button" type="submit" value="Submit">Submit</button>
-				</form>
+		  						<div class="formContent">
+
+			  						<div class="formLeft">
+			  							
+			  							<label for="customerName">Name</label><br>
+										<input type="text" size="30" name="customerName"><br>
+
+										<label for="customerZip">Zip Code</label><br>
+										<input type="text" size="10" name="customerZip"><br>
+
+										<label for="petNumber">Number of Pets</label><br>
+										<input type="text" size="10" name="petNumber"><br>
+
+										<label for="startDay, endDay">Day(s) Requested</label><br>
+										<input id="datepicker1" type="text" size="10" name="startDay"> to <input id="datepicker2" type="text" size="10" name="endDay"><br>
+
+										<input class="hidden" type="text" name="_gotcha" style="display: none"><br><br>
+
+		  								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="float: bottom;" id="button" type="submit" value="Submit">Submit</button>							
+
+			  						</div>
+			  						<div class="formRight">
+
+			  							<label for="_replyto">Email</label><br>
+										<input type="email" size="30" name="_replyto"><br>
+
+										<label for="customerPhone">Phone Number</label><br>
+										<input type="text" size="14" name="customerPhone" placeholder="(123) 456-7890"><br>
+
+										<label for="aboutPets">About your pet(s)</label><br>
+										<textarea name="aboutPets" rows="13" cols="31"></textarea><br>
+
+			  						</div>
+
+		  						</div>
+
+						</form>
+				</div>
 			</div>
 		</div>
 		<div class="footer">
@@ -119,57 +117,17 @@
 
 			$( "#accordion" ).accordion();
 
-
-
-				var availableTags = [
-					"ActionScript",
-					"AppleScript",
-					"Asp",
-					"BASIC",
-					"C",
-					"C++",
-					"Clojure",
-					"COBOL",
-					"ColdFusion",
-					"Erlang",
-					"Fortran",
-					"Groovy",
-					"Haskell",
-					"Java",
-					"JavaScript",
-					"Lisp",
-					"Perl",
-					"PHP",
-					"Python",
-					"Ruby",
-					"Scala",
-					"Scheme"
-				];
-				$( "#autocomplete" ).autocomplete({
-					source: availableTags
-				});
-
-
-
 				$( "#button" ).button();
 				$( "#button-icon" ).button({
 					icon: "ui-icon-gear",
 					showLabel: false
 				});
 
-
-
 				$( "#radioset" ).buttonset();
-
-
 
 				$( "#controlgroup" ).controlgroup();
 
-
-
 				$( "#tabs" ).tabs();
-
-
 
 				$( "#dialog" ).dialog({
 					autoOpen: false,
@@ -196,8 +154,6 @@
 					event.preventDefault();
 				});
 
-
-
 				$( "#datepicker1" ).datepicker({
 					inline: true
 				});
@@ -206,35 +162,22 @@
 					inline: true
 				});
 
-
-
 				$( "#slider" ).slider({
 					range: true,
 					values: [ 17, 67 ]
 				});
 
-
-
 				$( "#progressbar" ).progressbar({
 					value: 20
 				});
 
-
-
 				$( "#spinner" ).spinner();
-
-
 
 				$( "#menu" ).menu();
 
-
-
 				$( "#tooltip" ).tooltip();
 
-
-
 				$( "#selectmenu" ).selectmenu();
-
 
 				// Hover states on the static widgets
 				$( "#dialog-link, #icons li" ).hover(
