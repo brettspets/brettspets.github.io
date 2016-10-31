@@ -39,7 +39,7 @@ div {
 
 .container {
 	position: relative;
-	width: 1024px;
+	width: 960px;
 	margin: 0 auto;
 	transition: 0.25s;
 	border-radius: 2px;
@@ -86,15 +86,8 @@ div {
 }
 
 .mapFrame {
-	display: block;
-	position: relative;
-	left: 55%;
-}
-
-#map {
-	display: block;
-	position: relative;
-	left: -15%;
+	margin: 0;
+	padding: 0;
 }
 
 .col {
