@@ -19,7 +19,8 @@ html {
 
 div {
 	display: inline-block;
-	background-color: white;
+	background-color: #EBEEF0;
+	color: #323232;
 	text-align: left;
 	line-height: 140%;
 	letter-spacing: 0.5px;
@@ -83,6 +84,7 @@ a:visited {
 .tagline {
 	background-color: #FFD300;
 	background-image: url("img/bgnoise2.png");
+	color: black;
 	text-align: center;
 	font-family: 'Satisfy', cursive;
 	font-weight: bold;
