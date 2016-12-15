@@ -275,6 +275,10 @@ textarea:focus {
 	cursor: pointer;
 }
 
+.rateList {
+	list-style-type: circle;
+}
+
 ul a {
 	color: black;
 	text-decoration: none;
