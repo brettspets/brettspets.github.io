@@ -2,13 +2,21 @@
 layout: default
 ---
 <div class="banner">
-	<img src="/img/mouse.png" width="250" height="288" />
+	<div>
+		<img style="position: relative; left: -20px;" src="/img/mouse.png" width="250" height="288" />
+	</div>
 	<br>
 	<img src="/img/brettspets_alpha.png" width="600" height="163" />
+	<br>
+	<div class="container">
+		{% include form.html %}
+	</div>
 </div>
 
 <div class="container">
 			
 	{{ content }}
+	
+	<img id="collage" src="/img/collage.jpg" alt="Collage of Animals" />
 			
 </div>
